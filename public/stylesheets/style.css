@@ -7,9 +7,18 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.logo {
+  width: 50px;
+  opacity: 50%;
+  margin: auto;
+  position: fixed;
+  left: 49%;
+}
+
 nav {
   overflow: hidden;
   width: 100%;
+  height: 5%;
   position: fixed;
   top: 0;
   right: 0;
@@ -18,8 +27,11 @@ nav {
 }
 
 nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   float: right;
-  display: block;
   text-align: center;
   padding: 10px 30px;
   text-decoration: none;
@@ -29,4 +41,39 @@ nav a {
 nav a:hover {
   background: linear-gradient(0deg, rgb(110, 110, 110), rgb(255, 255, 255));
   color: rgb(255, 255, 255);
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login img {
+  height: 30px;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  border: 1px solid black;
+  border-bottom: none;
+  text-align: center;
+}
+
+.restaurant-name {
+  font-size: 20px;
+}
+
+.review {
+  text-align: center;
+  border: 1px solid rgb(79, 2, 2);
 }

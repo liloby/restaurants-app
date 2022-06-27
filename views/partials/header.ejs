@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <nav>
+    <a href="/">
+    <img class="logo" src="/images/logo.png">
+    </a>
+    <a href="/restaurants" <%- title === 'All Restaurants' ? 'class="active"' : '' %>>All Restaurants</a>
+    <% if (user) { %>
+      <a href="/restaurants/new"	<%- title === 'Add Restaurant' ? 'class="active"' : '' %>>
+      Share</a>
+      <a href="/profile" <%- title === 'Profile' ? 'class="active"' : '' %>>Profile</a>
+      <a href="/logout">Signout</a>
+    <% } else { %>
+      <a href="/auth/google" class="login">Sign-In&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+    <% } %>
+  </nav>
+  <body>
+    <h1><%= title %></h1><br>

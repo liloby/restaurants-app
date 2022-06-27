@@ -1,0 +1,29 @@
+<%- include('../partials/header')  %> 
+
+    <div class="container">
+    <form action="/restaurants" method="POST">
+    <h2>Enter a Restaurant to Share</h2>
+  <label>Name of Restaurant:
+    <input type="text" name="name" required>
+  </label><br>
+  <label>Location(City):
+    <input type="text" name="location" required>
+  </label><br>
+  <label>Rating
+    <select name="rating" required>
+      <option value="5">5</option>
+      <option value="4">4</option>
+      <option value="3">3</option>
+      <option value="2">2</option>
+      <option value="1">1</option>
+    </select><br>
+  </label>
+  <label>Review:<br>
+    <textarea rows="5" cols="35" name="review" required></textarea><br>
+  </label>
+  <input type="submit" value="Share">
+</form>
+</div>
+
+
+<%- include('../partials/footer')  %> 

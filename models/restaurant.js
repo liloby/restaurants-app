@@ -3,9 +3,12 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const restaurantSchema = new Schema({
-    Name: String,
-    Location: String,
-    Rating: Number
+    name: String,
+    location: String,
+    rating: Number,
+    review: String
+}, {
+    timestamps: true
 })
 
 // Compile the Schema into a model and export it

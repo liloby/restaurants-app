@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://127.0.0.1:27017/restaurants')
+mongoose.connect(process.env.DATABASE_URL);
 
 // shortcut to mongoose.connection object
 const db = mongoose.connection;
