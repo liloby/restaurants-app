@@ -1,8 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+nav {
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgb(0,0,0), rgb(150,150,150));
+  opacity: 80%;
+}
+
+nav a {
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+nav a:hover {
+  background: linear-gradient(0deg, rgb(110, 110, 110), rgb(255, 255, 255));
+  color: rgb(255, 255, 255);
 }
