@@ -1,10 +1,27 @@
-<%- include('../partials/header')  %> 
+<%- include('../partials/header') %>
 
-<div class="review"><br>
-        <div class="restaurant-name">Restaurant: <%= restaurant.name %> </div><br>
-        <div>Location: <%= restaurant.location %> </div><br>
-        <div>Rating: <%= restaurant.rating %> </div><br>
-        <div>Review: <%= restaurant.review %> </div><br>
-    </div>
+<div class="review">
+  <br />
+  <div class="user-name"><%= restaurant.userName %></div>
+  <br>
+  <img class="user-avatar" src="<%= restaurant.userAvatar %> " referrerpolicy="no-referrer">
+  <br><br>
 
-<%- include('../partials/footer')  %> 
+  <img class="res-image" src="<%= restaurant.image %>">
+  
+  <div>Location: <%= restaurant.location %></div>
+  <br />
+  <div>Rating: <%= restaurant.rating %></div>
+  <br />
+  <div>Review: <%= restaurant.review %></div>
+  <br />
+</div>
+<td>
+  <% if (user && user._id.equals(restaurant.user)) { %>
+    <form action="/restaurants/<%= restaurant._id %>?_method=DELETE" method="POST">
+      <button type="submit">Delete Post</button>
+    </form>
+  <% } %>
+</td>
+
+<%- include('../partials/footer') %>

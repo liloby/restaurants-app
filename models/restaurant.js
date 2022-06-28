@@ -6,7 +6,11 @@ const restaurantSchema = new Schema({
     name: String,
     location: String,
     rating: Number,
-    review: String
+    review: String,
+    image: String,
+    user: {type: Schema.Types.ObjectId, ref: 'User, required: true'},
+    userName: String,
+    userAvatar: String
 }, {
     timestamps: true
 })

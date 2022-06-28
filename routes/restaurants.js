@@ -9,5 +9,7 @@ router.get('/new', restaurantsCtrl.new)
 router.get('/:id', restaurantsCtrl.show)
 // POST /restaurants
 router.post('/', restaurantsCtrl.create)
+// Delete /restaurants/:id
+router.delete('/:id', restaurantsCtrl.delete)
 
 module.exports = router;

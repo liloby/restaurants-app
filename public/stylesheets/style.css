@@ -1,10 +1,16 @@
 * {
   box-sizing: border-box;
+  color: rgb(94, 6, 6);
 }
+
+
 
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: linear-gradient( rgba(230, 230, 230, 0.6), rgba(230, 230, 230, 0.602) ), url(../images/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .logo {
@@ -24,6 +30,7 @@ nav {
   right: 0;
   background: linear-gradient(0deg, rgb(0,0,0), rgb(150,150,150));
   opacity: 80%;
+  z-index: 1;
 }
 
 nav a {
@@ -61,19 +68,94 @@ h1, h2, p {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(110, 110, 110, 0.245), rgba(255, 255, 255, 0.252));
+  line-height: 2rem;
+}
+
+.share-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.share-click {
+  font-size: 1.75rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.share-click:hover {
+  transform: scale(1.2);
 }
 
 .box {
+  display: inline-block;
+  width: 45%;
+  margin-left: 2.5rem;
   border: 1px solid black;
-  border-bottom: none;
   text-align: center;
+  margin-bottom: 2.5rem;
+  background: linear-gradient(0deg, rgba(110, 110, 110, 0.445), rgba(214, 214, 214, 0.452));
+  box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.35);
+}
+
+.text-input {
+  width: 17.25rem;
+}
+
+.text-input2 {
+  width: 19.85rem;
 }
 
 .restaurant-name {
-  font-size: 20px;
+  font-size: 25px;
+  margin-bottom: 1.2rem;
+  transform: translate(0, -55%);
 }
 
 .review {
   text-align: center;
-  border: 1px solid rgb(79, 2, 2);
+}
+
+.user-name {
+  font-size: 1.5rem;
+}
+
+.user-avatar {
+  border: 2px solid rgb(0, 255, 0);
+  border-radius: 50%;
+  width: 8rem;
+}
+
+.res-image {
+  width: 50rem;
+  border: 2px solid rgb(134, 3, 3);
+}
+
+.res-image-preview {
+  width: 25rem;
+  height: 16rem;
+  border: 2px solid rgb(134, 3, 3);
+  transform: translate(0%, -6%);
+  z-index: 0;
+}
+
+.location {
+  float: right;
+  margin-right: 1.25rem;
+  color: rgb(137, 99, 0);
+}
+
+.rating {
+  color:rgb(0, 0, 0);
+  font-size: 1.5rem;
+  float: left;
+  transform: translate(20%, -30%);
+}
+
+.details {
+  margin: 1rem 0 1.25rem 0;
 }

@@ -4,12 +4,12 @@
     <form action="/restaurants" method="POST">
     <h2>Enter a Restaurant to Share</h2>
   <label>Name of Restaurant:
-    <input type="text" name="name" required>
+    <input class ="text-input" type="text" name="name" required>
   </label><br>
   <label>Location(City):
-    <input type="text" name="location" required>
+    <input class ="text-input2" type="text" name="location" required>
   </label><br>
-  <label>Rating
+  <label>Rating:
     <select name="rating" required>
       <option value="5">5</option>
       <option value="4">4</option>
@@ -19,9 +19,14 @@
     </select><br>
   </label>
   <label>Review:<br>
-    <textarea rows="5" cols="35" name="review" required></textarea><br>
+    <textarea rows="5" cols="50" name="review" required></textarea><br>
   </label>
-  <input type="submit" value="Share">
+  <label>Upload Image(link):<br>
+    <textarea rows="2" cols="50" name="image" required></textarea><br>
+  </label>
+  <div class="share-btn">
+  <input class= share-click type="submit" value="Share">
+  <div>
 </form>
 </div>
 
