@@ -1,5 +1,12 @@
 <%- include('../partials/header') %>
 
+<td>
+  <% if (user && user._id.equals(restaurant.user)) { %>
+    <form action="/restaurants/<%= restaurant._id %>?_method=DELETE" method="POST">
+      <button type="submit">Delete Post</button>
+    </form>
+  <% } %>
+</td>
 <div class="review">
   <br />
   <div class="user-name"><%= restaurant.userName %></div>
@@ -16,12 +23,5 @@
   <div>Review: <%= restaurant.review %></div>
   <br />
 </div>
-<td>
-  <% if (user && user._id.equals(restaurant.user)) { %>
-    <form action="/restaurants/<%= restaurant._id %>?_method=DELETE" method="POST">
-      <button type="submit">Delete Post</button>
-    </form>
-  <% } %>
-</td>
 
 <%- include('../partials/footer') %>

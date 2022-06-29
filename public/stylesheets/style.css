@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  color: rgb(94, 6, 6);
+  color: rgb(136, 2, 2);
 }
 
 
@@ -8,7 +8,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: linear-gradient( rgba(230, 230, 230, 0.6), rgba(230, 230, 230, 0.602) ), url(../images/background.jpg);
+  background: url(../images/background.png);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -24,7 +24,7 @@ body {
 nav {
   overflow: hidden;
   width: 100%;
-  height: 5%;
+  height: 5.5%;
   position: fixed;
   top: 0;
   right: 0;
@@ -96,10 +96,12 @@ h1, h2, p {
   width: 45%;
   margin-left: 2.5rem;
   border: 1px solid black;
+  border-radius: 5px;
   text-align: center;
   margin-bottom: 2.5rem;
-  background: linear-gradient(0deg, rgba(110, 110, 110, 0.445), rgba(214, 214, 214, 0.452));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.445), rgba(104, 104, 104, 0.452));
   box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.35);
+  transform: translate(5%);
 }
 
 .text-input {
@@ -118,6 +120,8 @@ h1, h2, p {
 
 .review {
   text-align: center;
+  border: 1px solid black;
+  background: linear-gradient(0deg, rgba(110, 110, 110, 0.445), rgba(214, 214, 214, 0.452));
 }
 
 .user-name {
@@ -132,6 +136,7 @@ h1, h2, p {
 
 .res-image {
   width: 50rem;
+  height: 32rem;
   border: 2px solid rgb(134, 3, 3);
 }
 
@@ -159,3 +164,21 @@ h1, h2, p {
 .details {
   margin: 1rem 0 1.25rem 0;
 }
+
+.welcome-msg {
+  position: fixed;
+  top: 1.6%;
+  left: 7.5%;
+  color: rgb(255, 252, 67);
+  font-size: 1.25rem;
+}
+
+.nav-avatar {
+  position: fixed;
+  left: 1.5%;
+  top: .15%;
+  width: 4rem;
+  border: 1px solid rgb(0, 76, 255);
+  border-radius: 50%;
+}
+

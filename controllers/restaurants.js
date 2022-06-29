@@ -39,15 +39,11 @@ function show(req, res) {
   });
 }
 
-async function deleteRestaurant(req, res, next) {
-  try {
-    const restaurant = await Restaurant.findOne({'restaurants._id': req.params.id, 'restaurants.user': req.user._id})
-    if (!restaurant) return res.redirect(`/restaurants`)
-    restaurant.remove(req.params.id)
-    await restaurant.save()
-    res.redirect('/restaurants')
-  } catch(err) {
-    console.log(err)
-    return next(err)
-  }
+function deleteRestaurant(req, res, next) {
+  Restaurant.findById(req.params.id, function(err, restaurant) {
+    restaurant.remove()
+    restaurant.save(function(err) {
+      res.redirect('/restaurants')
+    })
+  })
 }

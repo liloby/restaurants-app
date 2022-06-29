@@ -8,7 +8,7 @@ const restaurantSchema = new Schema({
     rating: Number,
     review: String,
     image: String,
-    user: {type: Schema.Types.ObjectId, ref: 'User, required: true'},
+    user: {type: Schema.Types.ObjectId, ref: 'User', required: true},
     userName: String,
     userAvatar: String
 }, {
