@@ -1,5 +1,4 @@
 <%- include('../partials/header') %>
-<h1><%= title %></h1><br>
   <% if (user && user._id.equals(restaurant.user)) { %>
     <form action="/restaurants/<%= restaurant._id %>?_method=DELETE" method="POST">
       <button class="delete-btn" type="submit">Delete Post</button>
@@ -11,8 +10,7 @@
   <div class="user-name"><%= restaurant.userName %></div>
   <br>
   <img class="user-avatar" src="<%= restaurant.userAvatar %> " referrerpolicy="no-referrer">
-  <br><br>
-
+  <h2><%= title %></h2>
   <img class="res-image" src="<%= restaurant.image %>">
   <% if (restaurant.createdAt.getTime() === restaurant.updatedAt.getTime()) { %> 
     <div class="timestamps">Posted On: <%= restaurant.createdAt.toLocaleDateString() %> <%= restaurant.createdAt.toLocaleTimeString() %></div>

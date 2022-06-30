@@ -76,8 +76,9 @@ h1, p {
 
 h2 {
   text-align: center;
-  margin-top: 2.8rem;
+  margin-top: 1rem;
   color: rgb(110, 5, 5);
+  font-size: 2rem;
 }
 
 .container {
