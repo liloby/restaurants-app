@@ -219,7 +219,7 @@ h2 {
 }
 
 .comment-text {
-  padding-left: 1rem;
+  padding-left: .5rem;
   color:rgb(255, 255, 255);
   font-size: 15px;
 }
@@ -233,10 +233,13 @@ h2 {
   font-size: 10px;
   font-style: italic;
   color: rgb(98, 130, 150);
+  display: inline-flex;
+  transform: translate(-30%, -100%);
 }
 
 .chat-name {
   color: rgb(255, 170, 59);
+  font-size: 15px;
 }
 
 h5 {
@@ -275,6 +278,10 @@ h5 {
 
 .chat-log-in:hover {
   color: rgb(214, 125, 180);
+}
+
+.table {
+  height: 3.2rem;
 }
 
 .profile-container {

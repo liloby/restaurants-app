@@ -14,7 +14,14 @@
   <br><br>
 
   <img class="res-image" src="<%= restaurant.image %>">
-  
+  <div>Posted On: <%= restaurant.createdAt.toLocaleDateString() %> <%= restaurant.createdAt.toLocaleTimeString() %></div>
+  <br />
+  <% if (restaurant.createdAt === restaurant.updatedAt) { %> 
+    <div>Hi</div>
+    <% } else { %> 
+      <div>Updated On: <%= restaurant.updatedAt.toLocaleTimeString() %></div>
+    <br />
+  <% } %> 
   <div>Location: <%= restaurant.location %></div>
   <br />
   <div>Rating: <%= restaurant.rating %></div>
@@ -27,13 +34,13 @@
       <table>
         <tbody class="chat-box">
           <% restaurant.comments.forEach(function(comment) { %>
-            <tr>
-              <td class="chat-date"><%= comment.createdAt.toLocaleDateString() %></td>
+            <tr class="table">
               <td>
                 <img class="comment-avatar" src="<%= comment.userAvatar %> " referrerpolicy="no-referrer">
               </td>
               <td class="chat-name"><%= comment.userName %>:</td>
               <td class="comment-text"><%= comment.content %></td>
+              <td class="chat-date"><%= comment.createdAt.toLocaleDateString() %> <%= comment.createdAt.toLocaleTimeString() %> </td>
             </tr>
             <% }); %>
           </tbody>
