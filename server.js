@@ -16,6 +16,7 @@ require('./config/passport');
 
 var indexRouter = require('./routes/index');
 var restaurantsRouter = require('./routes/restaurants');
+const commentsRouter = require('./routes/comments')
 
 var app = express();
 
@@ -47,6 +48,7 @@ app.use(function (req, res, next) {
 // ROUTES
 app.use('/', indexRouter);
 app.use('/restaurants', restaurantsRouter);
+app.use('/', commentsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

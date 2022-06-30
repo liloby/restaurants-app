@@ -1,49 +1,57 @@
 * {
   box-sizing: border-box;
-  color: rgb(136, 2, 2);
+  color: rgb(110, 5, 5);
 }
-
-
 
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: url(../images/background.png);
+  font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.176), rgba(86, 86, 86, 0.763)), url(../images/restaurant.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
+
 .logo {
-  width: 50px;
+  width: 70px;
   opacity: 50%;
-  margin: auto;
-  position: fixed;
-  left: 49%;
+  list-style: none;
 }
 
 nav {
   overflow: hidden;
-  width: 100%;
-  height: 5.5%;
   position: fixed;
   top: 0;
   right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 3px;
   background: linear-gradient(0deg, rgb(0,0,0), rgb(150,150,150));
   opacity: 80%;
   z-index: 1;
 }
 
 nav a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%;
-  float: right;
-  text-align: center;
-  padding: 10px 30px;
   text-decoration: none;
   color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  padding: 0;
+  font-weight: bold;
 }
+
+nav li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
 
 nav a:hover {
   background: linear-gradient(0deg, rgb(110, 110, 110), rgb(255, 255, 255));
@@ -62,14 +70,16 @@ nav a:hover {
 
 h1, h2, p {
   text-align: center;
+  margin-top: 3rem;
+  color: white;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(110, 110, 110, 0.245), rgba(255, 255, 255, 0.252));
+  border: 1px solid rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(138, 138, 138, 0.545), rgba(255, 255, 255, 0.552));
   line-height: 2rem;
 }
 
@@ -83,7 +93,7 @@ h1, h2, p {
 
 .share-click {
   font-size: 1.75rem;
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   cursor: pointer;
 }
 
@@ -92,24 +102,27 @@ h1, h2, p {
 }
 
 .box {
-  display: inline-block;
-  width: 45%;
-  margin-left: 2.5rem;
-  border: 1px solid black;
+  display: inline;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
   text-align: center;
   margin-bottom: 2.5rem;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.445), rgba(104, 104, 104, 0.452));
+  background: linear-gradient(0deg, rgba(120, 120, 120, 0.545), rgba(255, 255, 255, 0.552));
   box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.35);
-  transform: translate(5%);
+}
+
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 2.3rem;
 }
 
 .text-input {
-  width: 17.25rem;
+  width: 16.5rem;
 }
 
 .text-input2 {
-  width: 19.85rem;
+  width: 19.3rem;
 }
 
 .restaurant-name {
@@ -121,11 +134,12 @@ h1, h2, p {
 .review {
   text-align: center;
   border: 1px solid black;
-  background: linear-gradient(0deg, rgba(110, 110, 110, 0.445), rgba(214, 214, 214, 0.452));
+  background: linear-gradient(0deg, rgba(167, 167, 167, 0.545), rgba(214, 214, 214, 0.652));
 }
 
 .user-name {
   font-size: 1.5rem;
+  color: rgb(69, 40, 2);
 }
 
 .user-avatar {
@@ -138,11 +152,12 @@ h1, h2, p {
   width: 50rem;
   height: 32rem;
   border: 2px solid rgb(134, 3, 3);
+  margin-bottom: 1rem;
 }
 
 .res-image-preview {
-  width: 25rem;
-  height: 16rem;
+  width: 30rem;
+  height: 20rem;
   border: 2px solid rgb(134, 3, 3);
   transform: translate(0%, -6%);
   z-index: 0;
@@ -165,20 +180,83 @@ h1, h2, p {
   margin: 1rem 0 1.25rem 0;
 }
 
-.welcome-msg {
-  position: fixed;
-  top: 1.6%;
-  left: 7.5%;
-  color: rgb(255, 252, 67);
-  font-size: 1.25rem;
+.nav-avatar {
+  width: 3.5rem;
+  border: 1px solid rgb(0, 76, 255);
+  border-radius: 50%;
+  margin: 5px;
 }
 
-.nav-avatar {
-  position: fixed;
-  left: 1.5%;
-  top: .15%;
-  width: 4rem;
-  border: 1px solid rgb(0, 76, 255);
+.comment-section {
+  border: 3px solid rgb(58, 58, 58);
+  background-color: rgba(0, 0, 0, 0.517);
+  display: grid;
+  justify-items: center;
+  color: rgb(212, 156, 156);
+  font-size: 1.5rem;
+}
+
+.comment-avatar {
+  width: 30px;
+  border: 1px solid rgb(0, 255, 42);
   border-radius: 50%;
 }
 
+.comment-text {
+  padding-left: 1rem;
+  color:rgb(255, 255, 255);
+  font-size: 15px;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-date {
+  font-size: 10px;
+  font-style: italic;
+  color: rgb(98, 130, 150);
+}
+
+.chat-name {
+  color: rgb(255, 170, 59);
+}
+
+h5 {
+  color: rgb(142, 0, 142);
+}
+
+.chat-btn {
+  border: none;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+  display: flex;
+}
+
+.chat-btn:hover {
+  color: rgb(0, 255, 0);
+}
+
+.chat-inp {
+  height: 45%;
+  max-height: 80%;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: none;
+  resize: none;
+  font-size: 2rem;
+}
+
+.chat-log-in {
+  text-decoration: none;
+  color: rgb(154, 0, 95);
+  margin-bottom: 1rem;
+}
+
+.chat-log-in:hover {
+  color: rgb(214, 125, 180);
+}

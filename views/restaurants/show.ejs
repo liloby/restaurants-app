@@ -22,6 +22,37 @@
   <br />
   <div>Review: <%= restaurant.review %></div>
   <br />
+  <div class="comment-section">Chat:
+    
+    <% if (restaurant.comments.length) { %>
+      <table>
+        <tbody class="chat-box">
+          <% restaurant.comments.forEach(function(comment) { %>
+            <tr>
+              <td class="chat-date"><%= comment.createdAt.toLocaleDateString() %></td>
+              <td>
+                <img class="comment-avatar" src="<%= comment.userAvatar %> " referrerpolicy="no-referrer">
+              </td>
+              <td class="chat-name"><%= comment.userName %>:</td>
+              <td class="comment-text"><%= comment.content %></td>
+            </tr>
+            <% }); %>
+          </tbody>
+        </table>
+        <% } else { %>
+          <h5>No Comments Yet</h5>
+          <% } %>
+          <% if (user) { %> 
+          <form id="add-comment-form" method="POST"
+        action="/restaurants/<%= restaurant._id %>/comments">
+        <textarea class="chat-inp" rows="1" cols="100" name="content" required></textarea>
+        <input class="chat-btn" type="submit" value="Submit">
+      </form>
+      <% } else { %> 
+        <a class="chat-log-in" href="/auth/google">Log In to Chat</a>
+        <% } %> 
+  </div>
 </div>
+
 
 <%- include('../partials/footer') %>

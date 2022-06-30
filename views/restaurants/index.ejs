@@ -1,13 +1,17 @@
-<%- include('../partials/header') %> <% restaurants.forEach(function(res) { %>
+<%- include('../partials/header') %>
+<div class="grid-box">
+  <% restaurants.forEach(function(res) { %>
   <div class="box">
-  <br />
-  <div class="rating"><%= res.rating %>⭐</div>
-  <div class="location"><%= res.location %></div>
-  <br /><br />
-  <div class="restaurant-name"><%= res.name %></div>
-  <br />
-  <img class="res-image-preview" src="<%= res.image %>" />
-  <div class="details"><a href="/restaurants/<%= res._id %>">DETAILS</a></div>
-  <br />
+    <br />
+    <div class="rating"><%= res.rating %>⭐</div>
+    <div class="location"><%= res.location %></div>
+    <br /><br />
+    <div class="restaurant-name"><%= res.name %></div>
+    <br />
+    <img class="res-image-preview" src="<%= res.image %>" />
+    <div class="details"><a href="/restaurants/<%= res._id %>">DETAILS</a></div>
+    <br />
+  </div>
+  <% }); %>
 </div>
-<% }); %> <%- include('../partials/footer') %>
+<%- include('../partials/footer') %>

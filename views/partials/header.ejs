@@ -5,18 +5,30 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <nav>
-    <img class="logo" src="/images/logo.png">
     <% if (user) { %>
-      <a href="/logout">Signout</a>
-      <a href="/restaurants/new"	<%- title === 'Add Restaurant' ? 'class="active"' : '' %>>
-        Share</a>
-        <a href="/profile" <%- title === 'Profile' ? 'class="active"' : '' %>>Profile</a>
-        <img class="nav-avatar" src="<%= user.avatar %> " referrerpolicy="no-referrer">
-        <div class="welcome-msg">Welcome back, <%= user.name %></div>
+      <li>
+        <a href="/logout">Log Out</a>
+      </li>
+      <li>
+        <a href="/restaurants/new"	<%- title === 'Add Restaurant' ? 'class="active"' : '' %>>
+          Share</a>
+        </li>
+        <li class="welcome-avatar">
+          <img class="nav-avatar" src="<%= user.avatar %> " referrerpolicy="no-referrer">
+          
+        </li>
+        <li>
+          <a href="/profile" <%- title === 'Profile' ? 'class="active"' : '' %>>Profile</a>
+        </li>
         <% } else { %>
-          <a href="/auth/google" class="login">Sign-In&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+          <li>
+            <a href="/auth/google" class="login">Log In&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+          </li>
+          <img class="logo" src="/images/logo.png">
           <% } %>
+          <li>
           <a href="/restaurants" <%- title === 'All Restaurants' ? 'class="active"' : '' %>>All Restaurants</a>
+        </li>
   </nav>
   <body>
     <h1><%= title %></h1><br>
