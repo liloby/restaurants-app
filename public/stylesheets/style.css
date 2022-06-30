@@ -4,7 +4,7 @@
 }
 
 body {
-  padding: 50px;
+  padding: 60px;
   font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.176), rgba(86, 86, 86, 0.763)), url(../images/restaurant.jpg);
   background-size: cover;
@@ -123,7 +123,7 @@ h2 {
 .grid-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0 2.3rem;
+  grid-gap: 0 2.5rem;
 }
 
 .text-input {
@@ -136,8 +136,7 @@ h2 {
 
 .restaurant-name {
   font-size: 25px;
-  margin-bottom: 1.2rem;
-  transform: translate(0, -55%);
+  transform: translate(0, -85%);
 }
 
 .review {
@@ -193,7 +192,7 @@ h2 {
 }
 
 .details {
-  margin: 1rem 0 1.25rem 0;
+  margin-bottom: .5rem;
 }
 
 .details:hover {
@@ -382,7 +381,7 @@ h4 {
   font-family: 'Italianno', cursive;
   color: rgb(72, 179, 72);
   font-size: 6rem;
-  margin: 1rem 0 0 0;
+  margin: 0 auto;
 }
 
 .delete-btn {
