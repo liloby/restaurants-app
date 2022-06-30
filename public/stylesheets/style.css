@@ -136,7 +136,7 @@ h2 {
 
 .restaurant-name {
   font-size: 25px;
-  transform: translate(0, -85%);
+  transform: translate(0, -95%);
 }
 
 .review {
@@ -170,7 +170,7 @@ h2 {
   width: 30rem;
   height: 20rem;
   border: 2px solid rgb(134, 3, 3);
-  transform: translate(0%, -6%);
+  transform: translate(0%, -8%);
   z-index: 0;
 }
 
@@ -192,7 +192,8 @@ h2 {
 }
 
 .details {
-  margin-bottom: .5rem;
+  margin-bottom: .6rem;
+  transform: translate(0%, -20%);
 }
 
 .details:hover {
