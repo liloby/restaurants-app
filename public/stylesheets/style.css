@@ -330,12 +330,13 @@ h5 {
   border: 2px solid rgb(134, 3, 3);
   transform: translate(0%, -6%);
   z-index: 0;
+  transition: 400ms;
 }
 
 .res-image-profile:hover {
   transform: scale(1.2);
-  animation: shake 1000ms infinite;
-  transform: translate(100%);
+  transition: 500ms;
+  border: 2px solid greenyellow;
 }
 
 @keyframes shake {
