@@ -2,12 +2,12 @@
 <h1><%= title %></h1><br>
 <% if (user) { %>
 <div class="profile-container">
+  <div class="white-text"><%= user.name %></div>
   <img
     class="profile-avatar"
     src="<%= user.avatar %> "
     referrerpolicy="no-referrer"
   />
-  <div class="white-text"><%= user.name %></div>
   <div class="white-text">Email: <%= user.email %></div>
   <div class="white-text">Member Since: <%= user.createdAt.toLocaleDateString()%></div>
 </div>

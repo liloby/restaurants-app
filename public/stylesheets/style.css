@@ -289,7 +289,17 @@ h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 2rem;
+  line-height: 3rem;
+  border: 1px solid white;
+  width: 50%;
+  margin-bottom: 2rem;
+  transform: translate(50%);
+  background: linear-gradient(0deg, rgba(138, 138, 138, 0.545), rgba(255, 255, 255, 0.552));
+}
+
+.profile-avatar {
+  border: 1px solid rgb(0, 255, 0);
+  border-radius: 50%;
 }
 
 .white-text {
@@ -320,6 +330,24 @@ h5 {
   border: 2px solid rgb(134, 3, 3);
   transform: translate(0%, -6%);
   z-index: 0;
+}
+
+.res-image-profile:hover {
+  transform: scale(1.2);
+  animation: shake 1000ms infinite;
+  transform: translate(100%);
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
 }
 
 .res-link {
@@ -358,6 +386,10 @@ h4 {
   cursor: pointer;
 }
 
+.delete-btn:hover {
+  animation: shake 500ms infinite;
+}
+
 .edit-btn {
   text-decoration: none;
   background-color: rgb(242, 242, 242);
@@ -377,4 +409,5 @@ h4 {
 .edit-btn:hover {
   background-color: rgb(228, 228, 228);
   border: 1px solid rgb(80, 80, 80);
+  animation: shake 500ms infinite;
 }

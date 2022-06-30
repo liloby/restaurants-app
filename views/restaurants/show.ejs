@@ -16,12 +16,11 @@
   <img class="res-image" src="<%= restaurant.image %>">
   <div>Posted On: <%= restaurant.createdAt.toLocaleDateString() %> <%= restaurant.createdAt.toLocaleTimeString() %></div>
   <br />
-  <% if (restaurant.createdAt === restaurant.updatedAt) { %> 
-    <div>Hi</div>
+  <!-- <% if (restaurant.createdAt === restaurant.updatedAt) { %> 
     <% } else { %> 
       <div>Updated On: <%= restaurant.updatedAt.toLocaleTimeString() %></div>
     <br />
-  <% } %> 
+  <% } %>  -->
   <div>Location: <%= restaurant.location %></div>
   <br />
   <div>Rating: <%= restaurant.rating %></div>
