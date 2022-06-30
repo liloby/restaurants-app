@@ -149,6 +149,9 @@ h2 {
 .user-name {
   font-size: 1.5rem;
   color: rgb(69, 40, 2);
+  display: flex; 
+  justify-content: center;
+
 }
 
 .user-avatar {
@@ -340,4 +343,31 @@ h4 {
   color: rgb(72, 179, 72);
   font-size: 6rem;
   margin: 1rem 0 0 0;
+}
+
+.delete-btn {
+  float: left;
+  transform: translate(0%, -3%);
+  cursor: pointer;
+}
+
+.edit-btn {
+  text-decoration: none;
+  background-color: rgb(242, 242, 242);
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 2px;
+  padding: 1px 6px;
+  font-size: 13px;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.8rem;
+  height: 1.3rem;
+  transform: translate(1%, -2%);
+}
+
+.edit-btn:hover {
+  background-color: rgb(228, 228, 228);
+  border: 1px solid rgb(80, 80, 80);
 }

@@ -1,12 +1,11 @@
 <%- include('../partials/header') %>
 <h1><%= title %></h1><br>
-<td>
   <% if (user && user._id.equals(restaurant.user)) { %>
     <form action="/restaurants/<%= restaurant._id %>?_method=DELETE" method="POST">
-      <button type="submit">Delete Post</button>
+      <button class="delete-btn" type="submit">Delete Post</button>
     </form>
+    <a class="edit-btn" href="/restaurants/<%= restaurant._id%>/edit">Edit Post</a>
   <% } %>
-</td>
 <div class="review">
   <br />
   <div class="user-name"><%= restaurant.userName %></div>

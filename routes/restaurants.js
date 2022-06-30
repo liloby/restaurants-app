@@ -11,7 +11,9 @@ router.get('/:id', restaurantsCtrl.show)
 router.post('/', restaurantsCtrl.create)
 // Delete /restaurants/:id
 router.delete('/:id', restaurantsCtrl.delete)
-
-
+// Show the Edit page of /restaurants/:id
+router.get('/:id/edit', restaurantsCtrl.edit)
+// Edit the restaurant
+router.put('/:id', restaurantsCtrl.update)
 
 module.exports = router;

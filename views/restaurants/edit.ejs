@@ -1,0 +1,23 @@
+<%- include('../partials/header') %>
+<h1>Edit <%= title %></h1><br>
+<div class="container">
+    <form action="/restaurants/<%= restaurant._id%>?_method=PUT" method="POST" autocomplete="off">
+        <h2>Enter New Info</h2>
+        <label>Rating:
+            <select name="rating" required>
+              <option value="5">5</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select><br>
+          </label>
+          <label>Review:<br>
+            <textarea rows="5" cols="50" name="review" required></textarea><br>
+          </label>
+          <div class="share-btn">
+          <input class= share-click type="submit" value="Confirm Edit">
+          <div>
+    </form>
+</div>
+<%- include('../partials/footer') %>
