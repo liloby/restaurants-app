@@ -21,14 +21,26 @@
       <div class="timestamps">Updated On: <%= restaurant.updatedAt.toLocaleDateString() %> <%= restaurant.updatedAt.toLocaleTimeString() %></div>
     <br />
   <% } %> 
-  <div>Location: <%= restaurant.location %></div>
-  <br />
-  <div>Rating: <%= restaurant.rating %></div>
-  <br />
+  <% if (restaurant.rating === 5) { %> 
+    <div class="rating-show">⭐⭐⭐⭐⭐</div>
+    <% } %> 
+    <% if (restaurant.rating === 4) { %> 
+      <div class="rating-show">⭐⭐⭐⭐</div>
+      <% } %> 
+      <% if (restaurant.rating === 3) { %> 
+        <div class="rating-show">⭐⭐⭐</div>
+        <% } %> 
+        <% if (restaurant.rating === 2) { %> 
+          <div class="rating-show">⭐⭐</div>
+          <% } %> 
+          <% if (restaurant.rating === 1) { %> 
+            <div class="rating-show">⭐</div>
+            <% } %> <br />
+            <div>Location: <%= restaurant.location %></div><br />
   <div>Review: <%= restaurant.review %></div>
   <br />
   <div class="comment-section">Chat:
-    
+    <br />
     <% if (restaurant.comments.length) { %>
       <table>
         <tbody class="chat-box">
