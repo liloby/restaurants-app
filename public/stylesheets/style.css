@@ -239,7 +239,7 @@ h2 {
   font-style: italic;
   color: rgb(98, 130, 150);
   display: inline-flex;
-  transform: translate(-30%, -100%);
+  transform: translate(0%, -130%);
 }
 
 .chat-name {
