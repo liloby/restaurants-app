@@ -28,7 +28,7 @@ function create(req, res) {
 
 function index(req, res) {
   Restaurant.find({}, function (err, restaurants) {
-    res.render("restaurants/index", { title: "All Restaurants", restaurants });
+    res.render("restaurants/index", { title: "Our Favorites", restaurants });
   });
 }
 

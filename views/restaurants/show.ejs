@@ -1,5 +1,5 @@
 <%- include('../partials/header') %>
-
+<h1><%= title %></h1><br>
 <td>
   <% if (user && user._id.equals(restaurant.user)) { %>
     <form action="/restaurants/<%= restaurant._id %>?_method=DELETE" method="POST">

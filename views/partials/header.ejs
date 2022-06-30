@@ -2,6 +2,10 @@
 <html>
   <head>
     <title><%= title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <nav>
@@ -27,8 +31,7 @@
           <img class="logo" src="/images/logo.png">
           <% } %>
           <li>
-          <a href="/restaurants" <%- title === 'All Restaurants' ? 'class="active"' : '' %>>All Restaurants</a>
+          <a href="/restaurants" <%- title === 'Our Favorites' ? 'class="active"' : '' %>>Our Favorites</a>
         </li>
   </nav>
   <body>
-    <h1><%= title %></h1><br>

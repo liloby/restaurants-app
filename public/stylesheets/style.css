@@ -68,19 +68,28 @@ nav a:hover {
   height: 30px;
 }
 
-h1, h2, p {
+h1, p {
   text-align: center;
   margin-top: 3rem;
   color: white;
 }
 
+h2 {
+  text-align: center;
+  margin-top: 2.8rem;
+  color: rgb(110, 5, 5);
+}
+
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  align-content: center;
   border: 1px solid rgb(255, 255, 255);
   background: linear-gradient(0deg, rgba(138, 138, 138, 0.545), rgba(255, 255, 255, 0.552));
   line-height: 2rem;
+  transform: translate(50%);
 }
 
 .share-btn {
@@ -98,7 +107,7 @@ h1, h2, p {
 }
 
 .share-click:hover {
-  transform: scale(1.2);
+  color: green;
 }
 
 .box {
@@ -133,7 +142,7 @@ h1, h2, p {
 
 .review {
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   background: linear-gradient(0deg, rgba(167, 167, 167, 0.545), rgba(214, 214, 214, 0.652));
 }
 
@@ -178,6 +187,10 @@ h1, h2, p {
 
 .details {
   margin: 1rem 0 1.25rem 0;
+}
+
+.details:hover {
+  color: white;
 }
 
 .nav-avatar {
@@ -259,4 +272,72 @@ h5 {
 
 .chat-log-in:hover {
   color: rgb(214, 125, 180);
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2rem;
+}
+
+.white-text {
+  color: white;
+}
+
+.post-container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(167, 167, 167, 0.545), rgba(214, 214, 214, 0.652));
+}
+
+.post-container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-content: center;
+  grid-gap: 1rem 3rem;
+
+}
+
+.res-image-profile {
+  width: 21rem;
+  height: 14rem;
+  border: 2px solid rgb(134, 3, 3);
+  transform: translate(0%, -6%);
+  z-index: 0;
+}
+
+.res-link {
+  text-decoration: none;
+}
+
+.res-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+h4 {
+  font-family: 'Laila', sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 0 0 1.5rem 0;
+  font-weight: 100;
+  font-size: 1.25rem;
+}
+
+.main-title {
+  font-family: 'Italianno', cursive;
+  color: rgb(72, 179, 72);
+  font-size: 6rem;
+  margin: 1rem 0 0 0;
 }
