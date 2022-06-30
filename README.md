@@ -30,4 +30,5 @@
     Node.js, CSS, Embedded Javascript, Mongoose, Mongodb, Mongo Atlas, and Express
     Git/Github- Version Control
     Heroku- Project Deployment
+    Oauth- Provide secure user access
     
