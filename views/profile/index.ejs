@@ -15,7 +15,7 @@
 <h3>My Posts</h3>
 <div class="post-container2">
 <% restaurants.forEach(function(restaurant) { %> 
-   <% if (restaurant.userName === user.name) { %>
+   <% if (restaurant.user.equals(user._id)) { %>
     <a class="res-link" href="/restaurants/<%=restaurant._id%>">
         <img class="res-image-profile" src="<%= restaurant.image %>" />
         <div class="res-title"><%= restaurant.name %></div>

@@ -8,6 +8,7 @@ module.exports = {
 function index(req, res) {
     Restaurant.find({}, function (err, restaurants) {
         console.log(restaurants)
+        console.log(req.user)
         res.render("profile/index", { title: "My Profile", restaurants });
       });
 }
