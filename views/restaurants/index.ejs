@@ -5,7 +5,21 @@
   <% restaurants.forEach(function(res) { %>
   <div class="box">
     <br />
-    <div class="rating"><%= res.rating %>⭐</div>
+    <% if (res.rating === 5) { %> 
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+      <% } %> 
+    <% if (res.rating === 4) { %> 
+    <div class="rating">⭐⭐⭐⭐</div>
+      <% } %> 
+    <% if (res.rating === 3) { %> 
+    <div class="rating">⭐⭐⭐</div>
+      <% } %> 
+    <% if (res.rating === 2) { %> 
+    <div class="rating">⭐⭐</div>
+      <% } %> 
+    <% if (res.rating === 1) { %> 
+    <div class="rating">⭐</div>
+      <% } %> 
     <div class="location"><%= res.location %></div>
     <br /><br />
     <div class="restaurant-name"><%= res.name %></div>
