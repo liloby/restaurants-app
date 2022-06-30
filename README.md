@@ -27,7 +27,8 @@
 3. Add more social features such as chatting globally, adding friends, private messages...etc
 
 ##### Technogoly Used:
-    Node.js, CSS, Embedded Javascript, Mongoose, Mongodb, Mongo Atlas, and Express
+    HTML, CSS, Javascript
+    Node.js, Embedded Javascript, Mongoose, Mongodb, Mongo Atlas, and Express
     Git/Github- Version Control
     Heroku- Project Deployment
     Oauth- Provide secure user access
