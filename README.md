@@ -18,7 +18,7 @@
 #### Working App: 
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/72634228/176809001-f00f5b8d-5a22-473f-852d-b02cb0171b2f.png">
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/72634228/176770708-3a5aec82-cdf1-4c02-9266-0270759a7804.png">
-<img width="700" alt="image" src="https://user-images.githubusercontent.com/72634228/176809095-77dda88a-1004-4515-8a38-05d2d280af72.png">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/72634228/176809497-f7f8f329-b578-44d1-9370-226ac378a518.png">
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/72634228/176770176-5be69182-55b1-437d-8b86-037c0e314737.png">
 
 #### Future Updates :
