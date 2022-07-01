@@ -456,7 +456,7 @@ h4 {
   }
   .restaurant-name {
     font-size: 45px;
-    margin: -3rem;
+  
   }
   .post-container2 {
     grid-template-columns: repeat(2, 1fr);
