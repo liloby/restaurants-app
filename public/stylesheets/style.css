@@ -128,13 +128,16 @@ h2 {
 
 
 .text-input {
-  width: 16.5rem;
+  width: 100%;
 }
 
 .text-input2 {
-  width: 19.3rem;
+  width: 100%;
 }
 
+textarea {
+  width: 100%;
+}
 .restaurant-name {
   font-size: 25px;
   transform: translate(0, -95%);
@@ -456,7 +459,6 @@ h4 {
   }
   .restaurant-name {
     font-size: 45px;
-  
   }
   .post-container2 {
     grid-template-columns: repeat(2, 1fr);
