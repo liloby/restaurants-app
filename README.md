@@ -8,9 +8,9 @@
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/72634228/176771172-8ec23db5-a006-4120-a649-251fbebf5599.png">
 
 ##### ERD- 
-<img width="700" alt="image" src="https://user-images.githubusercontent.com/72634228/176771250-1f69a029-5375-4bd6-a78f-3a9e1130f8a1.png">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/72634228/176851387-72106f09-2ced-4135-9f01-6241affdd46d.png">
 
-##### Wireframe/design-
+##### Wireframe/initial design-
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/72634228/176771084-f9f37ad1-51d4-4df8-b647-2d9be42ed202.png">
 
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/72634228/176770937-e50dea9f-19b9-4767-a00a-c10214a82c96.png">
