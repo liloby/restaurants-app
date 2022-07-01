@@ -11,12 +11,6 @@ body {
   background-attachment: fixed;
 }
 
-@media only screen and (max-width: 1000px) {
-  body {
-    padding: 0px;
-    padding-top: 50px;
-  }
-}
 
 .logo {
   width: 70px;
@@ -132,6 +126,7 @@ h2 {
   grid-gap: 0 2.5rem;
 }
 
+
 .text-input {
   width: 16.5rem;
 }
@@ -156,7 +151,7 @@ h2 {
   color: rgb(69, 40, 2);
   display: flex; 
   justify-content: center;
-
+  
 }
 
 .user-avatar {
@@ -200,7 +195,7 @@ h2 {
 
 .rating-show {
   font-size: 1.5rem;
-
+  
 }
 
 .details:hover {
@@ -432,4 +427,89 @@ h4 {
   float: right;
   transform: translate(-20%, -95%);
   color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    padding: 0px;
+    padding-top: 50px;
+    margin: 0 auto;
+    background-size:auto;
+  }
+  nav {
+    height: 100px;
+  }
+  .grid-box {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    padding: 0 3rem;
+  }
+  .main-title {
+    margin: 4rem 0 0 0;
+  }
+  .res-image-preview {
+    width: 36rem; 
+    height: 26rem;
+  }
+  .restaurant-name {
+    font-size: 45px;
+    margin: -3rem;
+  }
+  .post-container2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  h1, p {
+    margin-top: 4rem;
+    font-size: 53px;
+  }
+  .profile-container {
+    padding: 1rem;
+    width: 100%;
+    transform: none;
+  }
+  .res-image-profile {
+    width: 27rem;
+    height: 18rem;
+  }
+  h3 {
+    font-size: 42px;
+  }
+  .res-title {
+    font-size: 32px;
+  }
+  .container {
+    width: 100%;
+    transform: none;
+  }
+  .text-input {
+    width: 100%;
+  }
+  .text-input2 {
+    width: 100%;
+  }
+  .review {
+    margin: 3rem;
+    margin-top: 7rem;
+  }
+  .edit-btn {
+    transform: translate(-70.5%, 410%);
+    width: 11.1rem;
+    height: 3.5rem;
+  }
+  .delete-btn {
+    transform: translate(29.5%, 306%);
+    width: 11.07rem;
+    height: 3.5rem;
+  }
+  textarea {
+    width: 100%;
+  }
+  .chat-inp {
+    width: 100%;
+  }
+  .chat-btn {
+    font-size: 5.3rem;
+    margin-bottom: 6rem;
+    margin-top: 0.7rem;
+  }
 }
