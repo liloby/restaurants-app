@@ -11,6 +11,11 @@ body {
   background-attachment: fixed;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0px;
+  }
+}
 
 .logo {
   width: 70px;
@@ -51,7 +56,6 @@ nav li {
   justify-content: center;
   list-style: none;
 }
-
 
 nav a:hover {
   background: linear-gradient(0deg, rgb(110, 110, 110), rgb(255, 255, 255));
