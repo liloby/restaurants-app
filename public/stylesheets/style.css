@@ -11,9 +11,10 @@ body {
   background-attachment: fixed;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   body {
     padding: 0px;
+    padding-top: 50px;
   }
 }
 
