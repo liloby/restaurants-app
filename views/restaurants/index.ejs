@@ -29,10 +29,14 @@
     </a>
     <br /><br />
     <% if (res.comments.length === 1) { %> 
+      <a href="/restaurants/<%= res._id %>">
     <div class="comments"><%= res.comments.length %> comment</div>
+  </a>
     <% } %>
     <% if (res.comments.length > 1) { %> 
+      <a href="/restaurants/<%= res._id %>">
     <div class="comments"><%= res.comments.length %> comments</div>
+  </a>
     <% } %>
   </div>
   <% }); %>
