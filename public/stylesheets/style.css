@@ -173,7 +173,13 @@ h2 {
   border: 2px solid rgb(134, 3, 3);
   transform: translate(0%, -8%);
   z-index: 0;
+  transition: 300ms;
 }
+
+.res-image-preview:hover {
+  border: 3px solid white;
+  transition: 300ms;
+} 
 
 .location {
   float: right;
@@ -190,11 +196,6 @@ h2 {
 .rating-show {
   font-size: 1.5rem;
 
-}
-
-.details {
-  margin-bottom: .6rem;
-  transform: translate(0%, -20%);
 }
 
 .details:hover {
@@ -420,4 +421,10 @@ h4 {
 
 .timestamps {
   color: rgb(39, 39, 39);
+}
+
+.comments {
+  float: right;
+  transform: translate(-20%, -95%);
+  color: white;
 }

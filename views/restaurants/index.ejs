@@ -24,9 +24,16 @@
     <br /><br />
     <div class="restaurant-name"><%= res.name %></div>
     <br />
+    <a href="/restaurants/<%= res._id %>">
     <img class="res-image-preview" src="<%= res.image %>" />
-    <div class="details"><a class="details" href="/restaurants/<%= res._id %>">DETAILS</a></div>
-    <br />
+    </a>
+    <br /><br />
+    <% if (res.comments.length === 1) { %> 
+    <div class="comments"><%= res.comments.length %> comment</div>
+    <% } %>
+    <% if (res.comments.length > 1) { %> 
+    <div class="comments"><%= res.comments.length %> comments</div>
+    <% } %>
   </div>
   <% }); %>
 </div>
