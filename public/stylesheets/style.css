@@ -429,12 +429,15 @@ h4 {
   color: white;
 }
 
-@media only screen and (min-width: 1000px) {
+@media all and (max-width: 1000px) {
   body {
     padding: 0px;
     padding-top: 50px;
     margin: 0 auto;
     background-size:auto;
+  }
+  .logo {
+    width: 112px;
   }
   nav {
     height: 100px;
