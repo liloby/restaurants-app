@@ -1,73 +1,94 @@
-<%- include('../partials/header') %>
-  <% if (user && user._id.equals(restaurant.user)) { %>
-    <form action="/restaurants/<%= restaurant._id %>?_method=DELETE" method="POST">
-      <button class="delete-btn" type="submit">Delete Post</button>
-    </form>
-    <a class="edit-btn" href="/restaurants/<%= restaurant._id%>/edit">Edit Post</a>
-  <% } %>
+<%- include('../partials/header') %> <% if (user &&
+user._id.equals(restaurant.user)) { %>
+<form action="/restaurants/<%= restaurant._id %>?_method=DELETE" method="POST">
+  <button class="delete-btn" type="submit">Delete Post</button>
+</form>
+<a class="edit-btn" href="/restaurants/<%= restaurant._id%>/edit">Edit Post</a>
+<% } %>
 <div class="review">
   <br />
   <div class="user-name"><%= restaurant.userName %></div>
-  <br>
-  <img class="user-avatar" src="<%= restaurant.userAvatar %> " referrerpolicy="no-referrer">
+  <br />
+  <img
+    class="user-avatar"
+    src="<%= restaurant.userAvatar %> "
+    referrerpolicy="no-referrer"
+  />
   <h2><%= title %></h2>
-  <img class="res-image" src="<%= restaurant.image %>">
-  <% if (restaurant.createdAt.getTime() === restaurant.updatedAt.getTime()) { %> 
-    <div class="timestamps">Posted On: <%= restaurant.createdAt.toLocaleDateString() %> <%= restaurant.createdAt.toLocaleTimeString() %></div>
-    <br />
-    <% } else { %> 
-      <div class="timestamps">Updated On: <%= restaurant.updatedAt.toLocaleDateString() %> <%= restaurant.updatedAt.toLocaleTimeString() %></div>
-    <br />
-  <% } %> 
-  <% if (restaurant.rating === 5) { %> 
-    <div class="rating-show">⭐⭐⭐⭐⭐</div>
-    <% } %> 
-    <% if (restaurant.rating === 4) { %> 
-      <div class="rating-show">⭐⭐⭐⭐</div>
-      <% } %> 
-      <% if (restaurant.rating === 3) { %> 
-        <div class="rating-show">⭐⭐⭐</div>
-        <% } %> 
-        <% if (restaurant.rating === 2) { %> 
-          <div class="rating-show">⭐⭐</div>
-          <% } %> 
-          <% if (restaurant.rating === 1) { %> 
-            <div class="rating-show">⭐</div>
-            <% } %> <br />
-            <div>Location: <%= restaurant.location %></div><br />
+  <img class="res-image" src="<%= restaurant.image %>" />
+  <% if (restaurant.createdAt.getTime() === restaurant.updatedAt.getTime()) { %>
+  <div class="timestamps">
+    Posted On: <%= restaurant.createdAt.toLocaleDateString() %> <%=
+    restaurant.createdAt.toLocaleTimeString() %>
+  </div>
+  <br />
+  <% } else { %>
+  <div class="timestamps">
+    Updated On: <%= restaurant.updatedAt.toLocaleDateString() %> <%=
+    restaurant.updatedAt.toLocaleTimeString() %>
+  </div>
+  <br />
+  <% } %> <% if (restaurant.rating === 5) { %>
+  <div class="rating-show">⭐⭐⭐⭐⭐</div>
+  <% } %> <% if (restaurant.rating === 4) { %>
+  <div class="rating-show">⭐⭐⭐⭐</div>
+  <% } %> <% if (restaurant.rating === 3) { %>
+  <div class="rating-show">⭐⭐⭐</div>
+  <% } %> <% if (restaurant.rating === 2) { %>
+  <div class="rating-show">⭐⭐</div>
+  <% } %> <% if (restaurant.rating === 1) { %>
+  <div class="rating-show">⭐</div>
+  <% } %> <br />
+  <div>Location: <%= restaurant.location %></div>
+  <br />
   <div>Review: <%= restaurant.review %></div>
   <br />
-  <div class="comment-section">Chat:
+  <div class="comment-section">
+    Chat:
     <br />
     <% if (restaurant.comments.length) { %>
-      <table>
-        <tbody class="chat-box">
-          <% restaurant.comments.forEach(function(comment) { %>
-            <tr class="table">
-              <td>
-                <img class="comment-avatar" src="<%= comment.userAvatar %> " referrerpolicy="no-referrer">
-              </td>
-              <td class="chat-name"><%= comment.userName %>:</td>
-              <td class="comment-text"><%= comment.content %></td>
-              <td class="chat-date"><%= comment.createdAt.toLocaleDateString() %> <%= comment.createdAt.toLocaleTimeString() %> </td>
-            </tr>
-            <% }); %>
-          </tbody>
-        </table>
-        <% } else { %>
-          <h5>No Comments Yet</h5>
-          <% } %>
-          <% if (user) { %> 
-          <form id="add-comment-form" method="POST"
-        action="/restaurants/<%= restaurant._id %>/comments">
-        <textarea class="chat-inp" rows="1" cols="100" name="content" required></textarea>
-        <input class="chat-btn" type="submit" value="Submit">
-      </form>
-      <% } else { %> 
-        <a class="chat-log-in" href="/auth/google">Log In to Chat</a>
-        <% } %> 
+    <table>
+      <tbody class="chat-box">
+        <% restaurant.comments.forEach(function(comment) { %>
+        <tr class="table">
+          <td>
+            <img
+              class="comment-avatar"
+              src="<%= comment.userAvatar %> "
+              referrerpolicy="no-referrer"
+            />
+          </td>
+          <td class="chat-name"><%= comment.userName %>:</td>
+          <td class="comment-text"><%= comment.content %></td>
+          <td class="chat-date">
+            <%= comment.createdAt.toLocaleDateString() %> <%=
+            comment.createdAt.toLocaleTimeString() %>
+          </td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+    <% } else { %>
+    <h5>No Comments Yet</h5>
+    <% } %> <% if (user) { %>
+    <form
+      id="add-comment-form"
+      method="POST"
+      action="/restaurants/<%= restaurant._id %>/comments"
+    >
+      <textarea
+        class="chat-inp"
+        rows="1"
+        cols="100"
+        name="content"
+        required
+      ></textarea>
+      <input class="chat-btn" type="submit" value="Submit" />
+    </form>
+    <% } else { %>
+    <a class="chat-log-in" href="/auth/google">Log In to Chat</a>
+    <% } %>
   </div>
 </div>
-
 
 <%- include('../partials/footer') %>

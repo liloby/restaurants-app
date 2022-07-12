@@ -9,6 +9,8 @@ body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.176), rgba(86, 86, 86, 0.763)), url(../images/restaurant.jpg);
   background-size: cover;
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
 }
 
 
