@@ -483,6 +483,9 @@ h4 {
     font-size: 1.5rem;
     width: 12rem;
   }
+  nav li {
+    height: 100%;
+  }
   .nav-avatar {
     width: 6.5rem;
   }
