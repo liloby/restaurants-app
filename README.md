@@ -23,8 +23,8 @@
 
 #### Mobile App:
 <p float="left">
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/72634228/188843591-b2728c2d-4f09-4eb6-8522-6d4705c1961b.png">
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/72634228/188843892-179f1382-c6b0-4b40-950c-ad26be781de6.png">
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/72634228/188843591-b2728c2d-4f09-4eb6-8522-6d4705c1961b.png">
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/72634228/188843892-179f1382-c6b0-4b40-950c-ad26be781de6.png">
 </p>
 
 
