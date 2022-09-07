@@ -89,6 +89,7 @@ h2 {
   justify-items: center;
   align-content: center;
   border: 1px solid rgb(255, 255, 255);
+  border-radius: 1rem;
   background: linear-gradient(0deg, rgba(138, 138, 138, 0.545), rgba(255, 255, 255, 0.552));
   line-height: 2rem;
   transform: translate(50%);
@@ -115,7 +116,7 @@ h2 {
 .box {
   display: inline;
   border: 1px solid rgb(255, 255, 255);
-  border-radius: 5px;
+  border-radius: 1rem;
   text-align: center;
   margin-bottom: 2.5rem;
   background: linear-gradient(0deg, rgba(120, 120, 120, 0.545), rgba(255, 255, 255, 0.552));
@@ -126,6 +127,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0 2.5rem;
+  justify-content: center;
 }
 
 
@@ -176,6 +178,7 @@ textarea {
   width: 30rem;
   height: 20rem;
   border: 2px solid rgb(134, 3, 3);
+  border-radius: 1rem;
   transform: translate(0%, -8%);
   z-index: 0;
   transition: 300ms;
@@ -235,10 +238,20 @@ textarea {
   font-size: 15px;
 }
 
+table {
+  width: 100%;
+}
 .chat-box {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: auto;
 }
+
+/* .chat-box::-webkit-scrollbar {
+  display: none;
+} */
 
 .chat-date {
   font-size: 10px;
@@ -302,6 +315,7 @@ h5 {
   align-items: center;
   line-height: 3rem;
   border: 1px solid white;
+  border-radius: 1rem;
   width: 50%;
   margin-bottom: 2rem;
   transform: translate(50%);
@@ -322,7 +336,9 @@ h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
   border: 1px solid rgb(255, 255, 255);
+  border-radius: 1rem;
   background: linear-gradient(0deg, rgba(167, 167, 167, 0.545), rgba(214, 214, 214, 0.652));
 }
 
@@ -331,13 +347,13 @@ h5 {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-content: center;
-  grid-gap: 1rem 3rem;
+  grid-gap: 1rem 2rem;
 
 }
 
 .res-image-profile {
-  width: 21rem;
-  height: 14rem;
+  width: 100%;
+  height: 80%;
   border: 2px solid rgb(134, 3, 3);
   transform: translate(0%, -6%);
   z-index: 0;
@@ -441,30 +457,42 @@ h4 {
 @media all and (max-width: 1000px) {
   body {
     padding: 0px;
-    padding-top: 50px;
     margin: 0 auto;
-    background-size:auto;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .logo {
-    width: 112px;
+    width: 10rem;
   }
   nav {
-    height: 100px;
+    height: 10%;
+    bottom: 0;
+    top:auto;
+    right: auto;
+  }
+  nav a {
+    font-size: 1.5rem;
+    width: 12rem;
+  }
+  .nav-avatar {
+    width: 6.5rem;
   }
   .grid-box {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
-    padding: 0 3rem;
+    padding: 0 1rem;
+    margin-bottom: 13.5rem;
   }
   .main-title {
-    margin: 4rem 0 0 0;
+    font-size: 15rem;
   }
   .res-image-preview {
-    width: 36rem; 
-    height: 26rem;
+    width: 40rem; 
+    height: 30rem;
   }
   .restaurant-name {
     font-size: 45px;
+    margin-top: 1rem;
   }
   .post-container2 {
     grid-template-columns: repeat(2, 1fr);
@@ -477,6 +505,13 @@ h4 {
     padding: 1rem;
     width: 100%;
     transform: none;
+  }
+  .profile-container .profile-avatar {
+    width: 15rem;
+    height: 15rem;
+  }
+  .white-text {
+    font-size: 1.5rem;
   }
   .res-image-profile {
     width: 27rem;
@@ -499,18 +534,16 @@ h4 {
     width: 100%;
   }
   .review {
-    margin: 3rem;
-    margin-top: 7rem;
+    margin-bottom: 14rem;
   }
   .edit-btn {
-    transform: translate(-70.5%, 410%);
-    width: 11.1rem;
-    height: 3.5rem;
+    position: fixed;
+    right: 0;
   }
   .delete-btn {
-    transform: translate(29.5%, 306%);
-    width: 11.07rem;
-    height: 3.5rem;
+    position: fixed;
+    float: right;
+    font-size: 1rem;
   }
   textarea {
     width: 100%;
@@ -519,8 +552,48 @@ h4 {
     width: 100%;
   }
   .chat-btn {
-    font-size: 5.3rem;
+    font-size: 3.3rem;
+    padding: 1rem;
     margin-bottom: 6rem;
     margin-top: 0.7rem;
+    border-radius: 2rem;
+  }
+  .location {
+    font-size: 2rem;
+  }
+  .rating {
+    font-size: 2rem;
+  }
+  .comments {
+    font-size: 1.5rem;
+  }
+  .box {
+    margin-bottom: 0;
+  }
+  .container {
+    height: 80vh;
+  }
+  form {
+    width: 90%;
+    line-height: 4rem;
+  }
+  form * {
+    font-size: 2.5rem;
+  }
+  form .share-btn input {
+    font-size: 3rem;
+  }
+  .res-image {
+    width: 100%;
+    height: 40rem;
+  }
+  .rating-show {
+    font-size: 2rem;
+  }
+  .chat-name{
+    font-size: 2rem;
+  }
+  .comment-text {
+    font-size: 1.5rem;
   }
 }
