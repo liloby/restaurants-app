@@ -21,8 +21,16 @@
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/72634228/176809497-f7f8f329-b578-44d1-9370-226ac378a518.png">
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/72634228/176770176-5be69182-55b1-437d-8b86-037c0e314737.png">
 
+#### Mobile App:
+<p float="left">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/72634228/188843591-b2728c2d-4f09-4eb6-8522-6d4705c1961b.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/72634228/188843892-179f1382-c6b0-4b40-950c-ad26be781de6.png">
+</p>
+
+
+
 #### Future Updates :
-1. Mobile Friendly
+1. Mobile Friendly (UPDATED)
 2. Add Sort by features(likes, rating, most commented, location...etc)
 3. Add more social features such as chatting globally, adding friends, private messages...etc
 
