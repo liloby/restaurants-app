@@ -145,11 +145,13 @@ textarea {
 .restaurant-name {
   font-size: 25px;
   transform: translate(0, -95%);
+  margin-top: 2rem;
 }
 
 .review {
   text-align: center;
   border: 1px solid rgb(255, 255, 255);
+  border-radius: 1rem;
   background: linear-gradient(0deg, rgba(167, 167, 167, 0.545), rgba(214, 214, 214, 0.652));
 }
 
@@ -172,6 +174,7 @@ textarea {
   height: 32rem;
   border: 2px solid rgb(134, 3, 3);
   margin-bottom: 1rem;
+  border-radius: 1rem;
 }
 
 .res-image-preview {
@@ -355,6 +358,7 @@ h5 {
   width: 100%;
   height: 80%;
   border: 2px solid rgb(134, 3, 3);
+  border-radius: 1rem;
   transform: translate(0%, -6%);
   z-index: 0;
   transition: 400ms;
