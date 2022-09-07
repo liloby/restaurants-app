@@ -15,9 +15,10 @@ body {
 
 
 .logo {
-  width: 70px;
+  width: 4rem;
   opacity: 50%;
   list-style: none;
+  height: 4rem;
 }
 
 nav {
@@ -467,12 +468,15 @@ h4 {
   }
   .logo {
     width: 10rem;
+    border-radius: 50%;
+    height: 10rem;
   }
   nav {
     height: 10%;
     bottom: 0;
     top:auto;
     right: auto;
+    align-items: center
   }
   nav a {
     font-size: 1.5rem;
