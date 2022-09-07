@@ -19,6 +19,7 @@ body {
   opacity: 50%;
   list-style: none;
   height: 4rem;
+  border-radius: 50%;
 }
 
 nav {
