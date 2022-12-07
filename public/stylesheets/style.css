@@ -279,9 +279,10 @@ h5 {
   border: none;
   font-size: 1.3rem;
   margin: 0 auto;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   margin-top: .5rem;
   display: flex;
+  border-radius: 5px;
 }
 
 .chat-btn:hover {
@@ -296,7 +297,8 @@ h5 {
   margin-top: 1rem;
   padding: none;
   resize: none;
-  font-size: 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
 }
 
 .chat-log-in {
