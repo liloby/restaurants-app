@@ -34,7 +34,7 @@
 2. Add Sort by features(likes, rating, most commented, location...etc)
 3. Add more social features such as chatting globally, adding friends, private messages...etc
 
-##### Technogoly Used:
+##### Technology Used:
     HTML, CSS, Javascript
     Node.js, Embedded Javascript, Mongoose, Mongodb, Mongo Atlas, and Express
     Git/Github- Version Control
